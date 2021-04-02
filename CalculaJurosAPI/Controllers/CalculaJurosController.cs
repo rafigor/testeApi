@@ -20,7 +20,9 @@ namespace CalculaJurosAPI.Controllers
             client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
 
-            HttpResponseMessage response = client.GetAsync("http://localhost:8080/taxaJuros").Result;
+            var _url = Environment.GetEnvironmentVariable("API_TAXAJUROS_URLBASE");
+
+            HttpResponseMessage response = client.GetAsync($"{_url}/taxaJuros").Result;
             response.EnsureSuccessStatusCode();
             string conteudo = response.Content.ReadAsStringAsync().Result;
 

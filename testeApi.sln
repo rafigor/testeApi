@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.6.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxaJurosAPI", "TaxaJurosAPI\TaxaJurosAPI.csproj", "{091899B9-DEDA-478C-92F7-D56B67B8EBEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxaJurosAPI", "TaxaJurosAPI\TaxaJurosAPI.csproj", "{091899B9-DEDA-478C-92F7-D56B67B8EBEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxaJurosAPI.Tests", "TaxaJurosAPI.Tests\TaxaJurosAPI.Tests.csproj", "{E8E1C4A7-21C8-4E08-BB1F-673069C9216B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxaJurosAPI.Tests", "TaxaJurosAPI.Tests\TaxaJurosAPI.Tests.csproj", "{E8E1C4A7-21C8-4E08-BB1F-673069C9216B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculaJurosAPI", "CalculaJurosAPI\CalculaJurosAPI.csproj", "{E4144053-38DC-408D-B621-E1207842E7FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculaJurosAPI", "CalculaJurosAPI\CalculaJurosAPI.csproj", "{E4144053-38DC-408D-B621-E1207842E7FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculaJurosAPI.Tests", "CalculaJurosAPI.Tests\CalculaJurosAPI.Tests.csproj", "{ADF67A0D-7569-4019-A27B-633B98059A5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculaJurosAPI.Tests", "CalculaJurosAPI.Tests\CalculaJurosAPI.Tests.csproj", "{ADF67A0D-7569-4019-A27B-633B98059A5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{091899B9-DEDA-478C-92F7-D56B67B8EBEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -72,5 +69,11 @@ Global
 		{ADF67A0D-7569-4019-A27B-633B98059A5F}.Release|x64.Build.0 = Release|Any CPU
 		{ADF67A0D-7569-4019-A27B-633B98059A5F}.Release|x86.ActiveCfg = Release|Any CPU
 		{ADF67A0D-7569-4019-A27B-633B98059A5F}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C677D1B-10D4-4755-BFE5-33638E2894B3}
 	EndGlobalSection
 EndGlobal
