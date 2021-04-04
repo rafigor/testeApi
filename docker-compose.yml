@@ -1,0 +1,24 @@
+version: '3.7'
+
+networks:
+  networks-api:
+    driver: "bridge"
+
+services:
+  taxajurosapi:
+    build: TaxaJurosAPI
+    container_name: taxajurosapi
+    restart: always
+    ports:
+      - "8081:80"
+    networks: 
+      - networks-api
+  
+  calculajurosapi:
+    build: CalculaJurosAPI
+    container_name: calculajurosapi
+    restart: always
+    ports:
+      - "80:80"
+    networks: 
+      - networks-api

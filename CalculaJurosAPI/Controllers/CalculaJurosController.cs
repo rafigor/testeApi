@@ -2,6 +2,7 @@ using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using CalculaJurosAPI.Models;
 using Newtonsoft.Json;
 
@@ -12,15 +13,16 @@ namespace CalculaJurosAPI.Controllers
     public class CalculaJurosController : ControllerBase
     {
         private CalculaJuros _calculaJuros;
+        
         [HttpGet()]
-        public ActionResult<CalculaJuros> Get([FromQuery(Name = "valorinicial")] decimal valorinicial, [FromQuery(Name = "meses")] int meses)
+        public ActionResult<CalculaJuros> Get([FromServices]IConfiguration config, [FromQuery(Name = "valorinicial")] decimal valorinicial, [FromQuery(Name = "meses")] int meses)
         {
+            var _url = config["API_TAXAJUROS_URLBASE"];
+            
             var client = new HttpClient();
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
-
-            var _url = Environment.GetEnvironmentVariable("API_TAXAJUROS_URLBASE");
 
             HttpResponseMessage response = client.GetAsync($"{_url}/taxaJuros").Result;
             response.EnsureSuccessStatusCode();
