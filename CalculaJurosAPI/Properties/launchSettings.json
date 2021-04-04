@@ -14,7 +14,7 @@
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
-        "API_TAXAJUROS_URLBASE": "https://localhost:8081",
+        "API_TAXAJUROS_URLBASE": "http://localhost:8081",
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "dotnetRunMessages": "true",
