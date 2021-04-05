@@ -22,3 +22,12 @@ services:
       - "8080:80"
     networks: 
       - networks-api
+
+  workspace:
+    build: CalculaJuros
+    container_name: workspace
+    restart: always
+    ports:
+      - "80:80"
+    networks:
+      - networks-api
