@@ -1,6 +1,6 @@
-# Taxa Juros API
+# Calcula Juros API
 
-API para retornar a taxa de juros
+API para realizar o calculo de juros compostos
 
 ## Install the dependencies
 ```bash
@@ -16,3 +16,6 @@ dotnet run
 ```bash
 RUN dotnet publish -c Release -o dist
 ```
+
+### Customize the configuration
+appsettings.json
